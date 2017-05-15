@@ -19,8 +19,3 @@ class Logger {
 };
 
 module.exports = Object.assign({}, new Logger(console));
-
-
-
-
-
