@@ -17,7 +17,10 @@ class Logger {
         reduce((p, v) => (Object.assign(p, { [v]: log(this.target)(v) })), this, keys(this.LOG_STATUS_FLAGS));
     }
 };
-// global.LOG_STATUS_FLAGS = LOG_STATUS_FLAGS;
-// global.logger = logger;
 
 module.exports = Object.assign({}, new Logger(console));
+
+
+
+
+
