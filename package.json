@@ -7,7 +7,9 @@
   "author": "Sukant Gujar <sukantgujar@yahoo.com>",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "build:prepack": "set WITH_PREPACK=1 && webpack",
+    "start": "webpack-dev-server",
+    "test": "npm run build:prepack && node test.js"
   },
   "license": "MIT",
   "dependencies": {
